@@ -1,0 +1,24 @@
+artifact_path: "file:///C:/Users/aoran/Desktop/Maestr\xEDa/4to trimestre/MLOps/Semana_4/Experimentacion_MLFlow/mlruns/1/models/m-ee05a6aa5f0244d094ba4d33727e9f7e/artifacts"
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.skops
+    predict_fn: predict
+    python_version: 3.11.11
+  sklearn:
+    code: null
+    pickled_model: model.skops
+    serialization_format: skops
+    sklearn_version: 1.9.1
+    skops_trusted_types:
+    - numpy.dtype
+mlflow_version: 3.17.0
+model_id: m-ee05a6aa5f0244d094ba4d33727e9f7e
+model_size_bytes: 307783
+model_uuid: m-ee05a6aa5f0244d094ba4d33727e9f7e
+prompts: null
+run_id: 533e255389354765834cf83dc9c60cdd
+utc_time_created: '2026-10-11 22:44:20.725571'
