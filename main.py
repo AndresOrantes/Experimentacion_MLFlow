@@ -1,16 +1,20 @@
+# Importación de librerías externas
 import argparse
 import logging
 import mlflow
 import mlflow.sklearn
 
+# Importación de funciones internas
 from src.dataset import clean_target, load_data, remove_duplicates, split_data
 from src.features import preprocessing
 from src.modeling.predict import evaluate_model
 from src.modeling.train import training_pipeline
 
+
+# Configuración de loggings
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 
-# --- Configuracion de variables ---
+# --- Configuracion inicial de parámetros y características ---
 TEST_SIZE = 0.2
 RANDOM_STATE = 42
 
@@ -25,7 +29,7 @@ CATEGORICAL_FEATURES = [
 PCA_COMPONENTS = 15
 EXPERIMENT_NAME = "Adult_Income_Classification"
 
-
+# parse_args para pasar argumentos en CLI
 def parse_args():
     parser = argparse.ArgumentParser(
         description="Entrenamiento de Logistic Regression con argumentos de CLI para MLflow."
