@@ -1,9 +1,11 @@
+# Importación de librerías 
 from sklearn.compose import ColumnTransformer
 from sklearn.impute import SimpleImputer
 from sklearn.preprocessing import OneHotEncoder, StandardScaler
 from sklearn.pipeline import Pipeline
 
 def preprocessing(numeric_features:list[str], categorical_features: list[str]) -> ColumnTransformer:
+    # Creación de de pasos para cada tipo de columna
     numeric_transformer = Pipeline(
         steps=[
             ("imputer", SimpleImputer(strategy="median")),
