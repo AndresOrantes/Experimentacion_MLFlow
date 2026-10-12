@@ -4,7 +4,8 @@
     <img src="https://img.shields.io/badge/CCDS-Project%20template-328F97?logo=cookiecutter" />
 </a>
 
-Experimentación de un modelo de ML con MLflow, sklearn y aplicando estructura a los archivos con cookiecutter
+Experimentación de un modelo de ML con MLflow, sklearn y aplicando estructura a los archivos con cookiecutter.
+Para correr el proyecto hay que usar el código en la terminal: uv run python main.py --C 10.0 --max-iter 2000 --solver lbfgs. Los valores: C, max-iter y solver corresponden a hiperparámetros del modelo y pueden ser reemplazados.
 
 ## Project Organization
 
